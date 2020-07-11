@@ -9,7 +9,7 @@ public class Datetime {
         LocalDate currentDate = LocalDate.now();
         System.out.println(currentDate);
     }
-  
+
 
     public static void main(String[] args) {
         dateNow();
