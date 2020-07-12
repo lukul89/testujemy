@@ -9,9 +9,10 @@ public class Zadanie2 {
             return;
         }
 
-        for (int i = 2; i < number; i++){
+        for (int i = 2; i < number/2; i++){
             if (number % i == 0){
             PrimeNumber = false;
+            break;
             }
         }
         if (PrimeNumber){
