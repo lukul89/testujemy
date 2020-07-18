@@ -1,3 +1,4 @@
+import Interface.Cat;
 import Kolekcje.ListEx1;
 import Kolekcje.MapEx1;
 import Kolekcje.SetEx1;
@@ -16,6 +17,8 @@ public class Main {
             System.out.println(getFirstMap.get(1));
             System.out.println(getFirstMap.get(2));
             System.out.println(getFirstMap.get(3));
+
+
         }
     }
 }
