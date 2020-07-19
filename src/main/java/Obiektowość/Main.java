@@ -30,7 +30,7 @@ public class Main {
         }
         System.out.println("Przefiltrowana lista");
 
-        
+
         List<Person> ageFiltered = Validator.filterPersons(listOfPersons);
 
         for (Person person : ageFiltered){

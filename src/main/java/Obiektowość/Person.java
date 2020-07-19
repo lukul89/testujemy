@@ -1,14 +1,26 @@
 package Obiektowość;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
-//@AllArgsConstructor odpowiada konstruktorowi z linii 17
+@Getter             //dodanie getterow i seterow do punktu zadania z Address
+@Setter
+//@AllArgsConstructor odpowiada konstruktorowi z linii 18
 public class Person{
 
     public static final Integer MAX_AGE = 130;
     private String name;                    // pola, atrybuty prywatne
     private String surname;
     private int age = 18;
+    private Address address;
+
+    public Person(String name, String surname, int age, Address address) {          // nowy konstruktor do klasy Address kolejny etap zadania po tym jak wczesniejsze rzeczy byly zrobione
+        this.name = name;
+        this.surname = surname;
+        this.age = age;
+        this.address = address;
+    }
 
     public Person(){                                    // kostruktor bezparametrowy ustawiamy wartości pól odrazu ale moga byc zmieniane
         this.name = "Młody";
@@ -45,6 +57,7 @@ public class Person{
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", age=" + age +
+                ", address=" + address.toString() +
                 '}';
     }
 }
