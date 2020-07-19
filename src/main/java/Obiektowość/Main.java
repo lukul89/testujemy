@@ -5,10 +5,16 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Person young = new Person();                            // uzycie wszystkich konstruktorów za pomoca ctrl i najazd na Person przy new mysza pokazuje z jakiego konstruktora korzystamy
+        Address address = new Address("okopowa", "warszawa", "polska", 7, 87);
+        Person young = new Person();                // uzycie wszystkich konstruktorów za pomoca ctrl i najazd na Person przy new mysza pokazuje z jakiego konstruktora korzystamy
+        young.setAddress(address);            // w argumencie trzeb auzyc zmiennej z linii 8 addresss
+
         Person johny = new Person("Johny","Bravo");
         Person ana = new Person("Ana","Nowak",25);
         Person old = new Person("Old","Japan",135);
+        johny.setAddress(address);
+        ana.setAddress(address);
+
 
 
         List<Person> listOfPersons = new ArrayList<>();    // tworzymy liste z imionami i wiekiem dlatego przy list ustawiamy Person bo nie ma tam tylko imion sa tez liczby
