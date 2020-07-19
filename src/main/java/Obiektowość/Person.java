@@ -6,7 +6,11 @@ import lombok.Setter;
 
 @Getter             //dodanie getterow i seterow do punktu zadania z Address
 @Setter
+<<<<<<< HEAD
 //@AllArgsConstructor odpowiada konstruktorowi z linii 18
+=======
+//@AllArgsConstructor odpowiada konstruktorowi z linii 17
+>>>>>>> 52ea1e69f3616e3c86dbf583d1db455fc61f54e3
 public class Person{
 
     public static final Integer MAX_AGE = 130;
